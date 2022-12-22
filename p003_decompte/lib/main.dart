@@ -76,6 +76,16 @@ class _MyDecompteState extends State<MyDecompte> {
                   fontSize: 24,
                 ),
               ),
+              SizedBox(
+                height: 150,
+                width: 150,
+                child: CircularProgressIndicator(
+                  value: _compteur / 20.0,
+                  backgroundColor: Colors.orange[600],
+                  strokeWidth: 2.0,
+                  valueColor: AlwaysStoppedAnimation(Colors.white),
+                ),
+              ),
               Text(
                 "$_compteur",
                 style: TextStyle(
